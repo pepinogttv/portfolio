@@ -1,0 +1,62 @@
+---
+import Layout from '../layouts/Layout.astro';
+import GlitchText from '../components/GlitchText.astro';
+---
+
+<Layout title="Simon Blanco - Web Developer" activeLink="0">
+	<div class="h-screen w-full relative">
+		<div class="absolute-center md:w-3/4 w-8/12">
+			<h1 class="md:text-6xl text-4xl relative">
+				<GlitchText text="I'm Simon Blanco"></GlitchText>
+			</h1>
+			<div class="text-white md:text-lg text-sm flex flex-col ">
+				<div class="subtitle mt-2">
+					<span class="const">const</span>
+					&#123;<span class="name">
+						nodejs, javascript
+					</span>&#125;
+					= <span class="require">require</span>(<span class="require-content">'<span
+							class="cursor-pointer hover:underline">./MyStack.js</span>'</span>)
+				</div>
+				<div class="md:text-sm mt-1 md:mt-0 text-xs uppercase subtitle-light">
+					// <h2 class="inline">nodejs and javascript developer</h2> <br>
+					// I'm not looking for a job. WORK AT DRUBBIT.COM <br>
+				</div>
+			</div>
+		</div>
+	</div>
+</Layout>
+
+<style>
+	.absolute-center {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+
+	.const {
+		color: #4473df;
+	}
+
+	.name {
+		color: #4FC1DB;
+	}
+
+	.require {
+		color: #DCB962;
+	}
+
+	.require-content {
+		color: #C97F5B;
+	}
+
+	.subtitle {
+		font-family: 'Roboto Mono', monospace;
+	}
+
+	.subtitle-light {
+		font-family: 'Roboto Mono', monospace;
+		font-weight: 200;
+	}
+</style>
