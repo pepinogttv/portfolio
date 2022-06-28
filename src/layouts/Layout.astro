@@ -51,16 +51,16 @@ const links = [
     <div class="bg-gray-800 fixed w-full flex justify-between items-center text-sm z-10">
       <nav class="flex">
         {links.map(({ label, href }, i) => (
-        <a href={href} class:list={[ 'px-4 py-2 w-28 flex items-center relative' , { 'bg-gray-900' :
+        <a href={href} class:list={[ 'px-2 py-2 w-28 flex items-center relative' , { 'bg-gray-900' :
           activeLink===i, 'border-r-gray-900 border-r' :activeLink !==i && activeLink !==i+1 &&
           !(i===links.length-1), 'bg-gray-700' : activeLink !==i } ]}>
-          <JSIcon width="11px" class="mr-1"></JSIcon>
-          <span class="mr-2">{label}</span>
-          <span class:list={['absolute right-1',{ 'hidden' : activeLink !==i }]}>&times;</span>
+          <JSIcon width="11px"></JSIcon>
+          <span class="ml-1">{label}</span>
+          <span class:list={['absolute right-2',{ 'hidden' : activeLink !==i }]}>&times;</span>
         </a>
         ))}
       </nav>
-      <div class="px-4">
+      <div class="md:pr-4 pr-2">
         <a href="https://www.linkedin.com/in/simon-blanco-140740212/" target="_blank" rel="noopener noreferrer"
           class="flex items-center">
           <span class="md:hidden">
